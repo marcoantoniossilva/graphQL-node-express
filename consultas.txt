@@ -1,0 +1,48 @@
+// Lista o nome e o salário de todos os funcionários
+{
+  funcionarios {
+    nome
+    salario
+  }
+}
+
+// Lista o nome do funcionário de id = 5
+{
+  funcionarioById(id:5){
+    nome
+  }
+}
+
+// Lista o nome, o salário e setor dos funcinários
+{
+  funcionarios {
+    nome
+    salario
+    setor{
+      nomeSetor
+    }
+  }
+}
+  
+// Lista o nome, o salário e o setor de todos os funcionários com a função de Vendedor
+{
+  funcionariosByFuncao(funcao:"Vendedor"){
+    nome
+    salario
+    setor{
+      nomeSetor
+    }
+  }
+}
+
+// Lista o nome, a meta e o setor de todos os funcionários do setor de Vendas
+{
+  funcionariosBySetor(setor:"Vendas"){
+    nome
+    meta
+    setor{
+      nomeSetor
+    }
+  }
+}
+  

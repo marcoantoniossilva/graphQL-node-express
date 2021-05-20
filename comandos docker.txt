@@ -1,0 +1,4 @@
+docker build -t node-debian9-graphql:1.0 . //criar a imagem
+docker run -p 4000:4000 node-debian9-graphql:1.0 //iniciar o container mapeando a porta 4000
+
+docker rmi node-debian9-graphql:1.0 //excluir a imagem
